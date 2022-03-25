@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block content %}{% load static %}
+
+<section class="content">
+  <div class="header">
+    <a href="/"
+      ><img class="main-logo" src="{% static 'img/light-bulb.png' %}"
+    /></a>
+    <h1>Edit</h1>
+  </div>
+  <section class="post_form">
+    <form action="/edit/{{posts.id}}/" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+
+      <input type="text" name="name" placeholder="Name" value='{{ posts.name}}' required /><br />
+      <input type="text" name="body" placeholder="share your idea"  value="{{posts.body}}" required></input
+      ><br />
+     {% if posts.image.url %}
+     <img src="{{posts.image.url}}" />
+     {% endif %}
+      <div class="banner">
+        <input type="file" name="image">
+        <a href="{% url 'index' %}" id="cancel" type="submit" >Cancel</a>
+        <input type="submit" value="Update" id="Tweet">
+      </div>
+     
+    </form>
+  </section>
+
+</section>
+{% endblock %}
