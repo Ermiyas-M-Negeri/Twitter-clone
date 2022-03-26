@@ -20,9 +20,9 @@ body {
 
 }
 img.post-border{
-    width: 70%;
+    width: 80%;
     border-radius: 10px;
-    height:35vh;
+    height:fit-content;
     margin-bottom: 25px;
 }
 
@@ -30,6 +30,7 @@ img.post-border{
     display: flex;
     border-bottom: 1px solid #ccc;
     padding-left: 10px;
+    border-top: 1px solid #ccc;
 }
 
 .header h1 {
