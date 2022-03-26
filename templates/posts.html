@@ -36,7 +36,7 @@
           src="{% static 'img/option.png' %}"
         />
         <div class="menu">
-          <a href="/delete/{{ post.id }}">Delete</a>
+          <a href="/delete/{{ post.id }}">Delete</a><br>
           <a href="/edit/{{ post.id }}">Edit</a>
         </div>
 
@@ -50,7 +50,7 @@
           <p>{{post.body}} <br /></p>
 
           {% if post.image.url %}
-          <img class="post-border" src="{{ post.image.url }}" style="width: 250px; height: 200px;">
+          <img class="post-border" src="{{ post.image.url }}" >
           {% endif %}
 
           <div>

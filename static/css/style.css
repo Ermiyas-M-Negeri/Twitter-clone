@@ -14,8 +14,16 @@ body {
     border-right: 1px solid #ccc;
 }
 .post_form img{
-    width:100%;
+    width:70%;
+    border-radius: 10px;
 
+
+}
+img.post-border{
+    width: 70%;
+    border-radius: 10px;
+    height:35vh;
+    margin-bottom: 25px;
 }
 
 .header {
@@ -107,6 +115,7 @@ input#uploadimage {
 
 .posts li .menu a {
     text-decoration: none ;
+    font-size:15px;
 }
 
 .posts li .logo{
@@ -131,5 +140,8 @@ input#uploadimage {
 @media screen and (max-width: 500px) {
     .posts li .name_body .name {
         font-size: 20px;
+    }
+    img.post-border{
+        width:100%;
     }
 }

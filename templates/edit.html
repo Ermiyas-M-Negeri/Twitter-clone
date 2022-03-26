@@ -19,8 +19,10 @@
      {% endif %}
       <div class="banner">
         <input type="file" name="image">
-        <a href="{% url 'index' %}" id="cancel" type="submit" >Cancel</a>
-        <input type="submit" value="Update" id="Tweet">
+        <div class="cancel">
+          <input href="{% url 'index' %}" id="Tweet" type="submit" value="Cancel">
+          <input type="submit" value="Update" id="Tweet">
+        </div>
       </div>
      
     </form>
